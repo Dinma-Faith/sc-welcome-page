@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import WelcomePage from './page/welcome-page';
 
 function App() {
 
   return (
-    <>
-      Hello!
-    </>
-  )
+    <div>
+      <WelcomePage />
+    </div>
+  );
 }
 
 export default App
