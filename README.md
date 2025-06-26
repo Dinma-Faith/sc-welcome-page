@@ -1,12 +1,31 @@
-# React + Vite
+🚀 SpeedCheck – Welcome Page
+This project represents the landing page (Welcome Page) for the SpeedCheck app, built using Vite + React and styled with CSS Modules. It’s fully responsive and mobile-first, providing a clean and modern layout with meaningful content sections.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Built with Vite
+⚛️ React (JavaScript)
+🎨 CSS Modules
 
-## Expanding the ESLint configuration
+🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the Repository
+   git clone https://github.com/your-username/sc-welcome-page.git
+   cd sc-welcome-page
+
+2. Install Dependencies
+   npm install
+
+3. Start the Development Server
+   npm run dev
+   Open http://localhost:5173 to view it in your browser.
+
+📚 Tech Stack
+    - Vite
+    - React
+    - CSS Modules
+
+🧑‍💻 Author
+Chidinma Anyanwu
+LinkedIn • GitHub
