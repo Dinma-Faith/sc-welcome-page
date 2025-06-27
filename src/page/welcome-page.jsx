@@ -5,8 +5,11 @@ const WelcomePage = () => {
     <div className={styles.container}>
       {/* Welcome Section */}
       <section className={styles.hero}>
-        <h1>Welcome to SpeedCheck</h1>
-        <p className={styles.subtext}>Your Internet Speed Companion</p>
+        <div className={styles.heroContent}>
+          <h1>Welcome to SpeedCheck</h1>
+          <p className={styles.subtext}>Your Internet Speed Companion</p>
+          <button className={styles.cta}>Check Speed</button>
+        </div>
       </section>
 
       {/* Why SpeedCheck Section */}

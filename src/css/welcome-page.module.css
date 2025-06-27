@@ -8,7 +8,16 @@
 /* Welcome Section */
 .hero {
   text-align: center;
-  margin-bottom: var(--space-lg);
+  padding: var(--space-xs) var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: var(--space-lg);
+}
+
+.heroContent {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -20,12 +29,28 @@
   font-size: var(--fs-sm);
   color: var(--clr-subtext);
   margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
 }
+
+.cta {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--space-xs);
+  font-size: var(--space-sm);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta:hover {
+  background-color: var(--clr-text);
+  color: var(--clr-bg-light);
+}
+
 
 /* Why Section */
 .why {
   text-align: center;
-  margin-bottom: var(--space-lg);
+  margin-block: var(--space-lg);
 }
 
 .why h2 {
