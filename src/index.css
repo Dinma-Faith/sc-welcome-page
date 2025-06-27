@@ -12,6 +12,9 @@
   --space-lg: 3rem;
   --space-xl: 4rem;
 
+  /* Font Family */
+  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
+
   /* Font Sizes */
   --fs-sm: 1rem;
   --fs-md: 1.5rem;
@@ -26,6 +29,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--f-fam);
 }
 
 p {
