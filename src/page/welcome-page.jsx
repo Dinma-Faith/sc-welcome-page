@@ -3,16 +3,18 @@ import styles from "../css/welcome-page.module.css";
 const WelcomePage = () => {
   return (
     <div className={styles.container}>
-      {/* Welcome Section */}
+      {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Welcome to SpeedCheck</h1>
-          <p className={styles.subtext}>Your Internet Speed Companion</p>
-          <button className={styles.cta}>Check Speed</button>
+          <p className={styles.subtext}>
+            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrup"
+          </p>
+          <button className={styles.cta}>Install</button>
         </div>
       </section>
 
-      {/* Why SpeedCheck Section */}
+      {/* Why Section */}
       <section className={styles.why}>
         <h2>Why SpeedCheck</h2>
         <p>
@@ -25,57 +27,67 @@ const WelcomePage = () => {
         </p>
       </section>
 
-      {/* About SpeedCheck Section */}
-      <section className={styles.about}>
-        <div className={styles.row}>
-          <div className={styles.text}>
-            <h3>Track Your Speed</h3>
-            <p>
-              Get accurate real-time results of your download, upload, and ping
-              speeds whenever you need it.
-              <br />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-              aut rem ab obcaecati neque, quod sunt aperiam nostrum? Doloribus
-              itaque dolores unde sunt consequatur magnam porro esse fugit ad
-              quod.
-            </p>
-          </div>
-          <div className={styles.image}></div>
-        </div>
+      <section className={styles.installSection}>
+  <h2 className={styles.installTitle}>How to Install SpeedCheck Extension: Developer Guide</h2>
 
-        <div className={`${styles.row} ${styles.reverse}`}>
-          <div className={styles.text}>
-            <h3>Compare ISPs</h3>
-            <p>
-              SpeedCheck allows you to compare internet speed performance across
-              multiple providers in your area.
-              <br />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-              aut rem ab obcaecati neque, quod sunt aperiam nostrum? Doloribus
-              itaque dolores unde sunt consequatur magnam porro esse fugit ad
-              quod.
-            </p>
-          </div>
+  {/* Prerequisites Section */}
+  <div className={styles.installRow}>
+    <div className={styles.installImage}></div>
+    <div className={styles.installText}>
+      <h3>1. Prerequisites</h3>
+      <ul>
+        <li>Google Chrome browser installed</li>
+        <li>Node.js and npm installed</li>
+        <li>Git installed on your system</li>
+        <li>Basic understanding of terminal commands</li>
+      </ul>
+    </div>
+  </div>
 
-          <div className={styles.image}></div>
-        </div>
+  {/* Setup Project Section */}
+  <div className={`${styles.installRow} ${styles.reverse}`}>
+    <div className={styles.installImage}></div>
+    <div className={styles.installText}>
+      <h3>2. Set Up the Project Locally</h3>
+      <ul>
+        <li>Clone the repository:
+          <code>git clone https://github.com/your-username/speedcheck.git</code>
+        </li>
+        <li>Navigate to the project folder:
+          <code>cd speedcheck</code>
+        </li>
+        <li>Install dependencies:
+          <code>npm install</code>
+        </li>
+        <li>Build the project:
+          <code>npm run build</code>
+        </li>
+        <li>Compile TypeScript files (if used):
+          <code>npx tsc</code>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-        <div className={styles.row}>
-          <div className={styles.text}>
-            <h3>Stay Informed</h3>
-            <p>
-              Analyze your speed history, discover patterns, and make smarter
-              decisions about your internet connection.
-              <br />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-              aut rem ab obcaecati neque, quod sunt aperiam nostrum? Doloribus
-              itaque dolores unde sunt consequatur magnam porro esse fugit ad
-              quod.
-            </p>
-          </div>
-          <div className={styles.image}></div>
-        </div>
-      </section>
+  {/* Load Extension in Chrome Section */}
+  <div className={styles.installRow}>
+    <div className={styles.installImage}></div>
+    <div className={styles.installText}>
+      <h3>3. Load Extension into Chrome</h3>
+      <ul>
+        <li>Open Chrome and go to:
+          <code>chrome://extensions/</code>
+        </li>
+        <li>Enable <strong>Developer mode</strong> (top-right corner)</li>
+        <li>Click <strong>Load Unpacked</strong></li>
+        <li>Select the <code>dist</code> folder from the project directory</li>
+        <li>The SpeedCheck Extension should now appear in your browser extensions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
     </div>
   );
 };

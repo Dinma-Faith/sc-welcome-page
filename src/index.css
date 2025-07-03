@@ -1,9 +1,28 @@
 :root {
+  /* Colors */
   --clr-bg-light: #f9f9f9;
+  --clr-hd-ii: #002e75;
   --clr-text: #28262b;
   --clr-subtext: #666;
   --clr-border: #d9d9d9;
   --clr-placeholder: #eee;
+  --clr-btn: #24053E;
+  --clr-btn-hover: var(--clr-border);
+  --clr-btn-hover-text: var(--clr-btn);
+
+  /* Font Family */
+  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
+
+  /* Font Sizes */
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 2.5rem;
+  --fs-xl: 3rem;
+
+  /* Font Weights */
+  --fw-normal: 400;
+  --fw-bold: 700;
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -12,17 +31,19 @@
   --space-lg: 3rem;
   --space-xl: 4rem;
 
-  /* Font Family */
-  --f-fam: 'IBM Plex Sans Devanagari', sans-serif;
-
-  /* Font Sizes */
-  --fs-sm: 1rem;
-  --fs-md: 1.5rem;
-  --fs-lg: 2.5rem;
-  --fs-xl: 3rem;
+  /* Border Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
 
   /* Layout */
-  --max-width: 1200px;
+  --max-width: 75rem; 
+
+  /* Transitions */
+  --transition-fast: 0.2s;
+  --transition-medium: 0.3s;
+  --transition-slow: 0.5s;
 }
 
 * {
@@ -32,6 +53,7 @@
   font-family: var(--f-fam);
 }
 
-p {
+p,
+ul {
   color: var(--clr-text);
 }
