@@ -62,7 +62,7 @@ const WelcomePage = () => {
         <li>Build the project:
           <code>npm run build</code>
         </li>
-        <li>Compile TypeScript files (if used):
+        <li>Compile TypeScript files :
           <code>npx tsc</code>
         </li>
       </ul>
